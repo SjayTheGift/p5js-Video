@@ -4,13 +4,19 @@ let y = 200;
 
 function setup() {
   createCanvas(1000,1000);
-  background(0);
-  angleMode(DEGREES);
-  rectMode(CENTER);
+  background(51);
+  video = CreateCapture(VIDEO);
+  video.size(1000,1000);
+  //angleMode(DEGREES);
+  //rectMode(CENTER);
 }
 
 function draw() {
-  push();
+	
+	tint(255,0,150);
+	image(video,0,0,width,height);
+	
+  /*push();
   fill(255,255,0);
   translate(500,500);
  rotate(angel);
@@ -46,6 +52,6 @@ function draw() {
   rect(80,80,10,10);
   pop();
   
-  angel +=1;
+  angel +=1;*/
 
 }
